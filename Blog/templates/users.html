@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  My all Users in website 
+{% endblock %}
+
+
+{% block content %}
+  <h1>Users</h1>
+  
+  <ul>
+    {% for x in users %}
+      <li>{{ x.username }} {{ x.email }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

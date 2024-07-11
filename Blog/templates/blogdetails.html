@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ posts.title }} {{ posts.content}} 
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ posts.content }} {{ posts.category }}</h1>
+  
+  <p> date_published : {{ posts.date_published }}</p>
+  
+  <p>Back to <a href="/blogs">blogs</a></p>
+  
+{% endblock %}
